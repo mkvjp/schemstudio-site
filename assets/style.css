@@ -28,6 +28,39 @@ pre code{background:none;color:inherit;padding:0}
 .st-blocked{background:#fdecec;color:#a12626}
 ul.timeline li,ul.posts li{margin:8px 0}
 .posts a{font-weight:600;color:var(--acc);text-decoration:none;font-size:17px}
+a.btn{display:inline-block;background:var(--acc);color:#fff;padding:7px 14px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:600}
+a.btn:hover{background:#095a45}
+/* 掲示板 (BBS 風) */
+.pinned{margin:14px 0;border:1px solid var(--line);border-radius:8px;background:#f4f8f6}
+.pinned>summary{cursor:pointer;padding:8px 12px;font-weight:600;color:var(--acc)}
+.pinned .board-md{padding:2px 14px 8px}
+.pinned .board-md h2{font-size:17px}
+.bbs{margin-top:16px}
+.thread{border:1px solid var(--line);border-radius:8px;margin:16px 0;background:#fcfcf7;overflow:hidden}
+.thread-title{margin:0;padding:9px 12px;background:#eef3f1;border-bottom:1px solid var(--line);font-size:15px}
+.post{padding:9px 12px;border-top:1px dashed #d8ddd6}
+.thread .post:first-of-type{border-top:none}
+.post.req{background:#fff8ea}
+.post-head{font-size:13px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-family:"SFMono-Regular",Menlo,Consolas,monospace}
+.post-head .resno{color:#0b6b52;font-weight:700}
+.post-head .resno::before{content:"No."}
+.post-head .name{color:#245a9e;font-weight:600}
+.post-head .dept{color:#6b7684}
+.post-head .ts{color:#6b7684}
+.badge{display:inline-block;padding:0 8px;border-radius:9px;font-size:11px;font-weight:700;line-height:1.7}
+.kind-notice{background:#e6effa;color:#245a9e}
+.kind-request{background:#ffe1c2;color:#8a3b00}
+.kind-report{background:#e2f3ea;color:#0b6b52}
+.kind-reply{background:#eef1f4;color:#6b7684}
+.kind-other{background:#eef1f4;color:#6b7684}
+.req-bar{margin:7px 0 3px;padding:4px 10px;background:#f7b955;color:#3a2400;font-weight:700;border-radius:6px;display:inline-block;font-size:13px}
+.to-line{margin:5px 0 0;color:#6b7684;font-size:12px}
+.post-title{font-weight:700;margin:6px 0 3px}
+.post-body{white-space:pre-wrap;font-size:14px;color:var(--fg)}
+/* 担当の履歴 */
+.snap{margin:10px 0;border:1px solid var(--line);border-radius:8px;background:#fff}
+.snap>summary{cursor:pointer;padding:9px 12px;background:#f4f8f6;border-radius:8px}
+.snap>summary:hover{background:#eef3f1}
 article h2{border:none}.back{margin-top:24px}
 article img,main img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px}
 figure{margin:16px 0}
