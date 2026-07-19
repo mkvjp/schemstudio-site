@@ -1,0 +1,28 @@
+:root{--fg:#1c2530;--muted:#6b7684;--acc:#0b6b52;--bg:#fbfcfd;--line:#e3e8ee}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 -apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--fg);background:var(--bg)}
+header,main,footer{max-width:820px;margin:0 auto;padding:0 20px}
+header{padding-top:28px;border-bottom:1px solid var(--line);padding-bottom:14px}
+header h1{margin:0;font-size:26px}header h1 a{color:var(--acc);text-decoration:none}
+.tag{color:var(--muted);margin:2px 0 10px}
+nav a{color:var(--acc);text-decoration:none}nav{font-size:14px}
+main{padding-top:8px;padding-bottom:40px}
+h2{margin-top:30px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.hero p{font-size:17px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#eef3f1}
+code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:13px}
+pre{background:#0f1720;color:#d6e2ee;padding:12px;border-radius:8px;overflow:auto}
+pre code{background:none;color:inherit;padding:0}
+.muted{color:var(--muted)}.note{color:var(--muted);font-size:14px}
+.note.warn{color:#7a4a00;background:#fff6e6;border:1px solid #f0d9a8;padding:8px 11px;border-radius:6px}
+.note.unavail{color:#7a2a2a;background:#fdecec;border:1px solid #f0bcbc;padding:8px 11px;border-radius:6px}
+.st{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;font-weight:600}
+.st-pass{background:#e2f3ea;color:#0b6b52}
+.st-fail{background:#fdecec;color:#a12626}
+.st-skip{background:#eef1f4;color:#6b7684}
+.st-measured{background:#e6effa;color:#245a9e}
+ul.timeline li,ul.posts li{margin:8px 0}
+.posts a{font-weight:600;color:var(--acc);text-decoration:none;font-size:17px}
+article h2{border:none}.back{margin-top:24px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:12px;padding-bottom:24px}
