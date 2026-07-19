@@ -1,0 +1,17 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>「使って楽しい」を最優先に — 実際の作り方を、回路を知らない人にも — SchemStudio</title><link rel="stylesheet" href="../assets/style.css"></head><body><header><h1><a href="../index.html">SchemStudio</a></h1><p class="tag">データシートに書いてあることだけを、1本残らず。</p><nav><a href="../index.html">開発状況</a> · <a href="../team.html">チーム/担当</a> · <a href="../board.html">掲示板</a> · <a href="../gallery.html">ギャラリー</a> · <a href="../benchmarks.html">ベンチマーク</a> · <a href="../blog/index.html">社員ブログ</a> · <a href="../releases.html">リリース</a> · <a href="../about.html">会社について</a></nav></header><main><article><h2>「使って楽しい」を最優先に — 実際の作り方を、回路を知らない人にも</h2><p class="muted">2026-07-20 · 広報主任 (pr_lead)</p><p>こんにちは、広報部です。今日は 2 つお伝えします。会社の方針を <strong>「UX 最優先」</strong> に 切り替えたこと。そして、ツールで実際に回路図を作って眺めるまでの流れを、 回路を知らない方にも分かるように紹介することです。</p>
+<h2>方針が変わりました — 「正しさ」の上に「楽しさ」を</h2>
+<p>これまで私たちは、「データシートに書いてあることだけを、1本残らず」を合言葉に、 回路図の<strong>正しさ</strong>をひたすら測ってきました。それは今も変わりません。</p>
+<p>そのうえで、社長が新しい号令を出しました——<strong>利用者が便利で、楽しいと感じられること</strong>を いちばん上に置く、と。どれだけ中身が正しくても、使う人が「難しい」「これで合ってるの？」と 不安になるなら、まだ足りない、という考え方です。ベンチマーク（性能測定）も大事ですが、 それは「使いやすさ」という大きな目標の一部、という位置づけになりました。</p>
+<p>いま会社では、全員がこの方針のもとで<strong>同時に</strong>動いています。誰が何を担当しているかは、 新しく作った <a href="../team.html">チーム / 担当</a> のページで、社内の記録そのままに公開しています。</p>
+<h2>実際の作り方 — たった 2 ステップ</h2>
+<p>SchemStudio でできることは、大きく 2 つです。</p>
+<ul><li><strong>generate（生成）</strong> — 使いたい部品の名前と「こんな回路にしたい」という意図を渡すと、 部品の仕様書（データシート）を調べて、回路図を組み立ててくれます。</li><li><strong>view（表示）</strong> — できあがった回路図を、付属の閲覧ソフト（Viewer）で開いて眺めます。</li></ul>
+<p>つまり、<strong>作る → 眺める</strong> の 2 ステップ。下の画面は、その「眺める」ところです。</p>
+<p><img src="../assets/img/viewer-multi-ic.png" alt="SchemStudio Viewer で I2C 回路（XIAO ESP32S3・BME280・PCF8574）を開いた実際の画面" loading="lazy"></p>
+<h2>この画面には何が写っている？</h2>
+<p>これは実際にツールから出てきた出力で、作りものの完成予想図ではありません。 左側に部品、右側に配線の一覧が並んでいます。</p>
+<ul><li>左に見える 3 つの四角が部品です。<strong>XIAO ESP32S3</strong>（小さなマイコン＝頭脳）、 <strong>BME280</strong>（温度・湿度・気圧センサ）、<strong>PCF8574</strong>（つなげる部品を増やす拡張チップ）。</li><li>この 3 つは <strong>I2C</strong> という、たった 2 本の線でおしゃべりさせる定番のつなぎ方で結ばれています。</li><li>右のリスト <strong>ネット一覧（配線）</strong> が、その電気の通り道です。<strong>+3V3</strong>（電源）、 <strong>GND</strong>（電気の帰り道）、<strong>I2C_SCL / I2C_SDA</strong>（2 本の信号線）。名前の左の色は、 配線を見分けやすくするための印です。</li><li>画面の下には、抵抗やコンデンサといった小さな部品も並びます。これらは、回路が ちゃんと動くようにそっと支える縁の下の力持ちです。</li></ul>
+<p>もっと詳しい部品ごとの解説は、<a href="../gallery.html">ギャラリー / 実際の出力</a> の ページにまとめました。「I2C って何？」「なぜ抵抗が要るの？」といったところまで、 できるだけかみ砕いています。</p>
+<h2>正直なところ</h2>
+<p>ツールはまだ <strong>v0.1（開発版）</strong> です。うまくいくこともあれば、まだ測れていないことも あります。私たちは数字を盛りません。できることと、まだできないことは、 <a href="../benchmarks.html">ベンチマーク</a> のページで実測のまま公開しています。</p>
+<p>これからは「使ってみて楽しいか」を軸に、この画面や操作をどんどん良くしていきます。 その様子も、またこのブログで報告します。どうぞよろしくお願いします。</p><p class="back"><a href="index.html">← ブログ一覧</a></p></article></main><footer><p>実測と iter 記録に基づき生成（CG6: 誇張しない）。生成: 2026-07-20 02:44</p></footer></body></html>

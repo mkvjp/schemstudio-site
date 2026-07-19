@@ -1,0 +1,14 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ギャラリー / 実際の出力 — SchemStudio</title><link rel="stylesheet" href="assets/style.css"></head><body><header><h1><a href="index.html">SchemStudio</a></h1><p class="tag">データシートに書いてあることだけを、1本残らず。</p><nav><a href="index.html">開発状況</a> · <a href="team.html">チーム/担当</a> · <a href="board.html">掲示板</a> · <a href="gallery.html">ギャラリー</a> · <a href="benchmarks.html">ベンチマーク</a> · <a href="blog/index.html">社員ブログ</a> · <a href="releases.html">リリース</a> · <a href="about.html">会社について</a></nav></header><main><h2>ギャラリー / 実際の出力</h2><figure class="shot"><img src="assets/img/viewer-multi-ic.png" loading="lazy" alt="SchemStudio Viewer に XIAO ESP32S3・BME280・PCF8574 の I2C 回路を表示した画面。右パネルに +3V3 / GND / I2C_SCL / I2C_SDA のネット一覧が並ぶ。"><figcaption>SchemStudio が生成した回路図を、付属の Viewer で開いた実際の画面。左に 3 つの IC（マイコン・センサ・I/O 拡張）、右に配線（ネット）の一覧。</figcaption></figure><h2>この画面は何？</h2>
+<p>上の画像は、SchemStudio というツールが<strong>自動で作った回路図</strong>を、付属の閲覧ソフト （Viewer）で開いたときの実際の画面です。作りものの完成予想図ではなく、ソフトから 出てきたそのままの出力です。</p>
+<p>「回路図」というのは、電子部品どうしをどの線でつなぐかを描いた<strong>配線の設計図</strong>のこと。 料理でいうレシピのようなもので、これを見れば同じ基板を組み立てられます。</p>
+<h2>何がつながっているの？</h2>
+<p>この例では、3 つの部品を <strong>I2C（アイ・スクエア・シー）</strong> という 2 本の信号線で 数珠つなぎにしています。I2C は、少ない配線でいくつもの部品を会話させられる、 電子工作で定番のつなぎ方です。</p>
+<ul><li><strong>XIAO ESP32S3（U1）</strong> — 頭脳にあたる小さなマイコン（コンピュータ）。ここから ほかの部品に指示を出したり、データを読み取ったりします。</li><li><strong>BME280（U2）</strong> — 温度・湿度・気圧をはかるセンサ。マイコンが「いま何度？」と たずねると、数値を返してくれます。</li><li><strong>PCF8574（U3）</strong> — 「I/O 拡張」と呼ばれる部品。マイコンの少ない足（ピン）を 増やして、LED やスイッチをたくさんつなげるようにします。</li></ul>
+<h2>右側のリストは？</h2>
+<p>画面の右にある <strong>ネット一覧（配線）</strong> は、この回路に通っている「電気の通り道」の一覧です。</p>
+<ul><li><strong>+3V3</strong> — 3.3 ボルトの電源（部品を動かす電気）。</li><li><strong>GND</strong> — グラウンド（電気の帰り道。基準になる 0 ボルト）。</li><li><strong>I2C_SCL / I2C_SDA</strong> — さきほどの I2C の 2 本の信号線。SCL がタイミングを刻む線、 SDA がデータを流す線です。</li></ul>
+<p>名前の左の色は、Viewer 上で配線を色分けして見やすくするための印です。名前に マウスを乗せると、その配線がどの部品のどのピンにつながっているかを確認できます。</p>
+<h2>下に並んでいる小さな部品は？</h2>
+<p>画面の下のほうに、抵抗（R1・R2）とコンデンサ（C1・C2・C3）が並んでいます。 これらは主役ではありませんが、回路がちゃんと動くための<strong>縁の下の力持ち</strong>です。</p>
+<ul><li><strong>プルアップ抵抗（R1・R2）</strong> — I2C の 2 本の線を、待機中はそっと 3.3V 側へ 引き上げておく部品。これが無いと信号がうまく伝わりません。</li><li><strong>パスコン（C1・C2・C3、100nF）</strong> — 各部品の電源のそばに置いて、電圧の ちらつきをならすコンデンサ。「電気の小さな貯金箱」のような役割です。</li></ul>
+<p>こうした細かな部品まで、部品のデータシート（仕様書）に沿って自動で入れてくれるのが、 SchemStudio が目指しているところです。まだ開発版（v0.1）で、できることも、まだ 測れていないことも、正直に <a href="benchmarks.html">ベンチマーク</a> のページで公開しています。</p></main><footer><p>実測と iter 記録に基づき生成（CG6: 誇張しない）。生成: 2026-07-20 02:44</p></footer></body></html>

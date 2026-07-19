@@ -22,7 +22,15 @@ pre code{background:none;color:inherit;padding:0}
 .st-fail{background:#fdecec;color:#a12626}
 .st-skip{background:#eef1f4;color:#6b7684}
 .st-measured{background:#e6effa;color:#245a9e}
+.st-active{background:#e6effa;color:#245a9e}
+.st-review{background:#fff6e6;color:#7a4a00}
+.st-done{background:#e2f3ea;color:#0b6b52}
+.st-blocked{background:#fdecec;color:#a12626}
 ul.timeline li,ul.posts li{margin:8px 0}
 .posts a{font-weight:600;color:var(--acc);text-decoration:none;font-size:17px}
 article h2{border:none}.back{margin-top:24px}
+article img,main img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px}
+figure{margin:16px 0}
+figure.shot img{display:block;width:100%;box-shadow:0 1px 6px rgba(20,40,60,.08)}
+figcaption{color:var(--muted);font-size:13px;margin-top:8px}
 footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:12px;padding-bottom:24px}

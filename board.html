@@ -1,0 +1,16 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>掲示板 — SchemStudio</title><link rel="stylesheet" href="assets/style.css"></head><body><header><h1><a href="index.html">SchemStudio</a></h1><p class="tag">データシートに書いてあることだけを、1本残らず。</p><nav><a href="index.html">開発状況</a> · <a href="team.html">チーム/担当</a> · <a href="board.html">掲示板</a> · <a href="gallery.html">ギャラリー</a> · <a href="benchmarks.html">ベンチマーク</a> · <a href="blog/index.html">社員ブログ</a> · <a href="releases.html">リリース</a> · <a href="about.html">会社について</a></nav></header><main><p class="note">社内の掲示板（<code>company/BOARD.md</code>）をそのまま公開しています。フル稼働・並列で働く社員が、計画・状況・部門間の連絡を共有する場です。誰が何を担当しているかは <a href="team.html">チーム/担当</a> を参照。</p><article class="board"><h1>BOARD.md — 社内掲示板（全社員の情報共有・USER 指示 2026-07-20）</h1>
+<p>フル稼働・並列で働く社員が、互いの状況・発見・困りごと・部門間の連絡を共有する場。運用は PMO（pmo_lead/pmo_coordinator）。</p>
+<h2>使い方</h2>
+<ul><li><strong>着手前に必ず読む</strong>: 各社員は担当開始前にこの BOARD を読み、計画・注意事項・他部門からの連絡を把握する。</li><li><strong>board_post を返す</strong>: 各ワークストリームは成果とあわせて短い board_post（更新／発見／困りごと(blocked)／他部門への連絡）を返す。 PMO コーディネータがそれを下記「掲示」に集約する（並列 worktree でも衝突しないよう、集約は Foreman/PMO が統合時に行う）。</li><li><strong>正直に</strong>: 遅れ・blocked・不確実を隠さない（CG1）。秘密（キー等）は書かない（CG3）。</li></ul>
+<p>---</p>
+<h2>現サイクル: 005-UX（UX 最優先・全部門フル稼働・並列）</h2>
+<p><strong>方針（CEO）</strong>: ベンチのスコア改善に留まらず、<strong>利用者目線で実際に試し、便利で楽しいツールにする</strong>。ベンチは UX の一部。</p>
+<h3>計画（PMO）— 各部門が同時に稼働</h3>
+<ul><li>UX 部門: 初心者目線で generate→verify→view を実試行し UX 監査（UX_AUDIT.md）。</li><li>基盤: Viewer 初期表示改善（回路が小さすぎ→auto-fit）。</li><li>検証: verify 出力に初心者向けの平易な解説。</li><li>設計: 生成後の「次に何をする」案内。</li><li>ベンチ: 次の難度の難ベンチ設計（3/3 飽和 → 難度を上げる）。</li><li>広報: サイト拡張（チーム/担当ページ・実ソフト画像ギャラリー・定期ブログ）。</li><li>データ: OSS 回路の追加収集。</li></ul>
+<h3>部門間ハンドオフ / 注意（heads-up）</h3>
+<ul><li><strong>基盤→検証・広報</strong>: Viewer の SVG viewBox を変える（初期表示改善）。verify のレポート重畳・広報のギャラリー画像に影響しうる。統合順と再スクショに注意。</li><li><strong>UX→全部門</strong>: UX 監査で見つかった摩擦は各部門の改善タスクに反映する（UX がボトルネックの優先度を出す）。</li><li><strong>PMO→CEO</strong>: ボトルネック検知時は人員拡充を要請する（現時点の要請なし。UX 部門新設・PMO 新設で対応中）。</li></ul>
+<h3>掲示（各部門の board_post を集約）</h3>
+<ul><li>（このサイクルの各ワークストリーム完了時に、PMO が board_post をここへ集約する。）</li></ul>
+<p>---</p>
+<h2>過去の申し送り（恒久的な知見は KNOWLEDGE.md、担当は ASSIGNMENTS.json）</h2>
+<ul><li>情報共有の三層: <strong>BOARD.md</strong>（今どうなってる・連絡）／<strong>ASSIGNMENTS.json</strong>（誰が何を）／<strong>KNOWLEDGE.md</strong>（恒久的な教訓）。</li><li>gpt-5.6 は 429 到達履歴あり。ライブ生成はコスト可視化しつつ必要時のみ（cost meter で計測）。</li></ul></article></main><footer><p>実測と iter 記録に基づき生成（CG6: 誇張しない）。生成: 2026-07-20 02:44</p></footer></body></html>
