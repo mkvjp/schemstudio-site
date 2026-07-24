@@ -1,0 +1,29 @@
+ERC report (2026-07-24T11:43:45, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[multiple_net_names]: +3V3 と 3V3 は、ともに同じ配線に接続されています; +3V3 をネットリスト用ラベルとして選択しました
+    ; warning
+    @(190.50 mm, 190.50 mm): Symbol PWR1 ピン 1 [電源入力, ライン]
+    @(87.63 mm, 106.68 mm): ラベル '3V3'
+[lib_symbol_issues]: 現在の構成にはシンボル ライブラリ 'custom' が含まれていません
+    ; warning
+    @(88.90 mm, 127.00 mm): シンボル U1 [XIAO_ESP32S3]
+[lib_symbol_issues]: 現在の構成にはシンボル ライブラリ 'custom' が含まれていません
+    ; warning
+    @(215.90 mm, 127.00 mm): シンボル U2 [BME280]
+[pin_to_pin]: ピンのタイプ 双方向 と 電源出力 が接続されています
+    ; warning
+    @(238.76 mm, 128.27 mm): Symbol U2 ピン 5 [SDO, 双方向, ライン]
+    @(88.90 mm, 147.32 mm): Symbol #FLG1 ピン 1 [電源出力, ライン]
+[lib_symbol_issues]: 現在の構成にはシンボル ライブラリ 'custom' が含まれていません
+    ; warning
+    @(342.90 mm, 127.00 mm): シンボル U3 [PCF8574]
+
+ ** ERC messages: 5  Errors 0  Warnings 5
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
